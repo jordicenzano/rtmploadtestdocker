@@ -2,7 +2,7 @@
 
 function usage
 {
-	echo "Usage: startcontainer.sh CONTAINER_ID/NAME number_containers_to_lunch"
+	echo "Usage: startcontainer.sh IMAGE_ID/NAME number_containers_to_lunch"
   	exit 1
 }
 
