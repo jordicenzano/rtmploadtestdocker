@@ -20,8 +20,8 @@ RUN apt-get install software-properties-common python-software-properties -y && 
 	apt-get install ffmpeg -y && \
 	apt-get clean
 
-#Copy test content
-COPY tmp/bbb_sunflower_1080p_30fps_normal_audio.mp4 tmp/bbb_sunflower_1080p_60fps_normal_audio.mp4 /data/test_material/
+#Copy all allowed media content from media dir to container
+COPY media/*.mp4 /data/test_material/
 
 #Copy load test scripts
 COPY scripts/rtmploadtest.sh scripts/rtmpclean.sh /data/scripts/
