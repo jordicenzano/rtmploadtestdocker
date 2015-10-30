@@ -1,0 +1,5 @@
+- The files should be in the correct format
+- You can use ffmpeg to trancsode them first
+- This is and example of the ffmpeg command to use for trancoding
+
+ffmpeg -i INPUTFILE -pix_fmt yuv420p -c:v libx264 -b:v 500k -g 25 -profile:v baseline -preset veryfast -c:a libfaac -b:a 96k -f flv OUTFILE.mp4
