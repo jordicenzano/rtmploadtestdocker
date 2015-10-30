@@ -2,8 +2,8 @@
 
 function usage
 {
-    echo "Usage: startcontainer.sh IMAGE_ID/NAME [dest url] [file to stream] [show logs]"
-    echo "Example: startcontainer.sh hello/ABCDE rtmp://log:pass@server.com:1935/live/streamname auto720p30@2M 0"
+    echo "Usage: startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]"
+    echo "Example: startcontainer.sh ABCDE rtmp://log:pass@server.com:1935/live/streamname auto720p30@2M 0"
     echo "Special filenames are: auto240p30@500k, auto720p30@2M, auto720p60@3M, auto1080p30@3M, and auto1080p60@4M"
     exit 1
 }
