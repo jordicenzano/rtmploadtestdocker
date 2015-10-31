@@ -19,7 +19,7 @@ ffmpeg -i INPUTFILE -pix_fmt yuv420p -c:v libx264 -b:v 500k -g 25 -profile:v bas
 - Call `make`
 
 # Test container locally
-- Call `startcontainer.sh IMAGE_ID/NAME [dest url] [file to stream] [show logs]`, for example:
+- Call `startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]`, for example:
 ```
 ./startcontainer.sh ABCDE rtmp://log:pass@server.com:1935/live/streamname auto720p30@2M 0
 ```
