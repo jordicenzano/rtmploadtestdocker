@@ -35,5 +35,6 @@ auto1080p60@4M: Video 1920x1080 at 60fps, H264 4Mbps + 1KHz sine audio AAC at 96
 - To push to DockerHub (https://docs.docker.com/userguide/dockerrepos/)
 
 #Use this container from the "Cloud"
-- To install a container from DockerHub to EC2 (http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+- To install docker and pull the container from DockerHub to EC2 follow this guide: (http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+- Clone this repo in the EC2 server (or just copy the `startcontainer.sh`)
 - Run the container in the EC2 server with `startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]`
