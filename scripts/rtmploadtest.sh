@@ -31,7 +31,7 @@ else
 fi
 
 #Create ffmpeg command
-FFMPEGCMD="ffmpeg $FFMPEGOPTS ${DEST_URL}"
+FFMPEGCMD="ffmpeg $FFMPEGOPTS $DEST_URL"
 
 echo "Starting command: $FFMPEGCMD\n\n"
 #SHOW_LOGS: Come from docker env var 

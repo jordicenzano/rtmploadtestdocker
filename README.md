@@ -40,4 +40,5 @@ auto1080p60@4M: Video 1920x1080 at 60fps, H264 4Mbps + 1KHz sine audio AAC at 96
 - Clone this repo in the EC2 server (or just copy the `startcontainer.sh`)
 - Pull the container `docker pull jcenzano/loadtestv1` It is the result of the compilation of the docker from this repo
 - Enter in the repo directory `cd rtmploadtestdocker`
+- To get the IMAGE_ID of the container run `docker images`
 - Run the container in the EC2 server with `./startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]`
