@@ -36,5 +36,8 @@ auto1080p60@4M: Video 1920x1080 at 60fps, H264 4Mbps + 1KHz sine audio AAC at 96
 
 #Use this container from the "Cloud"
 - To install docker and pull the container from DockerHub to EC2 follow this guide: (http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
+- Install git `yum install git -y`
 - Clone this repo in the EC2 server (or just copy the `startcontainer.sh`)
-- Run the container in the EC2 server with `startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]`
+- Pull the container `docker pull jcenzano/loadtestv1` It is the result of the compilation of the docker from this repo
+- Enter in the repo directory `cd rtmploadtestdocker`
+- Run the container in the EC2 server with `./startcontainer.sh IMAGE_ID [dest url] [file to stream] [show logs]`
