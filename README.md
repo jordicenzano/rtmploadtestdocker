@@ -31,10 +31,10 @@ auto720p60@3M: Video 1280x720 at 60fps, H264 3Mbps + 1KHz sine audio AAC at 96Kb
 auto1080p30@3M: Video 1920x1080 at 30fps, H264 3Mbps + 1KHz sine audio AAC at 96Kbps
 auto1080p60@4M: Video 1920x1080 at 60fps, H264 4Mbps + 1KHz sine audio AAC at 96Kbps
 ```
-#Push container to any container repository
+# Push container to any container repository
 - To push to DockerHub (https://docs.docker.com/userguide/dockerrepos/)
 
-#Use this container from the "Cloud"
+# Use this container from the "Cloud"
 - To install docker and pull the container from DockerHub to EC2 follow this guide: (http://docs.aws.amazon.com/AmazonECS/latest/developerguide/docker-basics.html)
 - Install git `yum install git -y`
 - Clone this repo in the EC2 server (or just copy the `startcontainer.sh`)

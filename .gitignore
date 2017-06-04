@@ -1,2 +1,7 @@
 /media/*.mp4
-/creds/
+
+.*
+!.gitignore
+
+/secrets/*
+!/secrets/*.example
